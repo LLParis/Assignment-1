@@ -1,5 +1,5 @@
 // London Paris
-// 1/19/00
+//
 //
 
 import java.util.*;

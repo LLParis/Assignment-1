@@ -1,8 +1,5 @@
-// Stuart Reges
-// 3/28/07
-//
-// Class ShoppingFrame provides the user interface for a simple shopping
-// program.
+// London Paris
+
 
 import javax.swing.*;
 import java.awt.*;
