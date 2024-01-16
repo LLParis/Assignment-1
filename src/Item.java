@@ -38,9 +38,21 @@ public class Item {
         // This does NOT produce the correct behavior. It's only here to keep the
         // compiler happy until you replace it with working code
         if (bulkPrice > 0) {
-            return name + price + "(" + bulkQuantity + " for " + bulkPrice + ")";
+            return name + ", " + price + " (" + bulkQuantity + " for " + bulkPrice + ")";
         } else {
             return name + ", " + price;
         }
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Item item = (Item) obj;
+        return name.equals(item.name) && Double.compare(price, item.price) == 0;
+    }
+
 }
